@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Eğitim Bölüm 4</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+  <div id="app1">
+    <h1 ref="heading">{{ title }}</h1>
+    <button v-on:click="show" ref="myButton">Paragrafı Göster</button>
+    <p v-if="showParagraph">Her zaman göremeyebiliriz!!</p>
+  </div>
+
+  <div id="app2">
+    <h1 ref="heading">{{ title }}</h1>
+    <button @click="changeTitle">Değiştir...</button>
+  </div>
+
+
+  <div id="app3">
+
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
